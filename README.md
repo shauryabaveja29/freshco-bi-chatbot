@@ -10,6 +10,76 @@
 
 ---
 
+## 🌿 Repository Structure
+
+This repository demonstrates version control best practices with two main branches:
+
+### **`main` Branch** - FreshCo Specific Version
+- Domain-specific implementation for FreshCo CPG dataset
+- Hardcoded column names for 206K-row dataset
+- Optimized for specific business use case
+- Direct Google Sheets integration
+- 📄 File: `freshco_chatbot_final.html`
+
+### **`feature/generic-version` Branch** ⭐ - Generic Universal Version
+- **Works with ANY Excel/CSV data**
+- Dynamic column detection and mapping
+- Bring Your Own API Key (BYOK)
+- File upload instead of Google Sheets
+- All 12 FreshCo analysis types preserved
+- 📄 File: `generic_ULTIMATE_COMPLETE.html`
+
+**🔗 Quick Links:**
+- [View FreshCo Version](https://github.com/YOUR_USERNAME/generic-bi-chatbot/tree/main)
+- [View Generic Version](https://github.com/YOUR_USERNAME/generic-bi-chatbot/tree/feature/generic-version) ⭐ **Recommended**
+
+---
+
+## 🚀 Quick Start (Generic Version)
+
+### **Access the Generic Version**
+
+**Option 1: Direct Download**
+```bash
+# Clone the generic branch
+git clone -b feature/generic-version https://github.com/YOUR_USERNAME/generic-bi-chatbot.git
+cd generic-bi-chatbot
+```
+
+**Option 2: Switch to Branch**
+```bash
+# If already cloned
+git clone https://github.com/YOUR_USERNAME/generic-bi-chatbot.git
+cd generic-bi-chatbot
+git checkout feature/generic-version
+```
+
+**Option 3: Direct File Link**
+- Navigate to: `feature/generic-version` branch
+- Download: `generic_ULTIMATE_COMPLETE.html`
+- Open in browser
+
+### **Setup (3 Steps)**
+
+1. **Get API Key**
+   - Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
+   - Create free Gemini API key
+   - Copy the key (starts with `AIza`)
+
+2. **Open & Configure**
+   - Open `generic_ULTIMATE_COMPLETE.html` in browser
+   - Click **⚙️ API Settings**
+   - Paste your API key
+   - Click **Save**
+
+3. **Upload & Analyze**
+   - Click **📤 Upload Excel/CSV**
+   - Select your data file
+   - Wait for "✅ Data Loaded"
+   - Start asking questions!
+
+---
+
 ## 🌟 Features
 
 ### **Core Capabilities**
@@ -19,6 +89,7 @@
 - ✅ **Professional Charts** - Bar, line, and pie charts with Chart.js
 - ✅ **Validation Sections** - Step-by-step calculation breakdowns
 - ✅ **BYOK** - Bring Your Own API Key (stored locally)
+- ✅ **No Server Required** - 100% client-side processing
 
 ### **Analysis Types**
 1. 📊 **Summary Analysis** - Dataset statistics and overview
@@ -33,79 +104,6 @@
 10. 💸 **Discount Analysis** - Pricing impact assessment
 11. 📊 **Universal Grouping** - Aggregate by any dimension
 12. 🔍 **General Queries** - Natural language questions
-
----
-
-## 🚀 Quick Start
-
-### **1. Download**
-```bash
-git clone https://github.com/YOUR_USERNAME/generic-bi-chatbot.git
-cd generic-bi-chatbot
-```
-
-### **2. Get API Key**
-1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
-2. Create free Gemini API key
-3. Copy the key (starts with `AIza`)
-
-### **3. Open & Configure**
-1. Double-click `generic_ULTIMATE_COMPLETE.html`
-2. Click **⚙️ API Settings**
-3. Paste your API key
-4. Click **Save**
-
-### **4. Upload Data**
-1. Click **📤 Upload Excel/CSV**
-2. Select your file
-3. Wait for "✅ Data Loaded"
-
-### **5. Start Analyzing**
-```
-"Show me a summary"
-"Top 10 products by revenue"
-"Revenue by category"
-"Show trend over time"
-"Stockouts during diwali"
-```
-
----
-
-## 📂 Project Structure
-
-```
-generic-bi-chatbot/
-│
-├── generic_ULTIMATE_COMPLETE.html    # Main file - Generic version
-├── freshco_chatbot_final.html        # Domain-specific version (optional)
-├── README.md                          # This file
-└── docs/                              # Documentation (optional)
-    ├── USER_GUIDE.md
-    ├── TECHNICAL_DOCS.md
-    └── QUERY_EXAMPLES.md
-```
-
----
-
-## 🎯 Use Cases
-
-### **For Students**
-- 📚 Upload assignment datasets
-- 🧪 Experiment with different queries
-- 📊 Generate visualizations for reports
-- 🔍 Validate calculations
-
-### **For Businesses**
-- 📈 Sales analysis
-- 📦 Inventory management
-- 💰 Profitability tracking
-- 🎯 Marketing effectiveness
-
-### **For Researchers**
-- 📊 Data exploration
-- 📈 Trend identification
-- 🔬 Hypothesis testing
-- 📉 Anomaly detection
 
 ---
 
@@ -124,6 +122,7 @@ generic-bi-chatbot/
 "Revenue by category"
 "Monthly trend"
 "Profit margin by brand"
+"Group by region"
 ```
 
 ### **Advanced Queries**
@@ -132,46 +131,89 @@ generic-bi-chatbot/
 "Which city has lowest inventory?"
 "Promotion effectiveness by channel"
 "Discount impact on profit margins"
+"Revenue trend over time"
 ```
+
+---
+
+## 📂 Branch Comparison
+
+| Feature | main (FreshCo) | feature/generic-version |
+|---------|----------------|-------------------------|
+| **Data Source** | Google Sheets | Excel/CSV Upload |
+| **Column Detection** | Hardcoded | Dynamic |
+| **Dataset** | FreshCo 206K rows | ANY dataset |
+| **API Key** | Embedded | BYOK |
+| **Use Case** | Domain-specific | Universal |
+| **Analysis Types** | 12 types | 12 types |
+| **Sharing** | Limited | Unlimited |
+| **For Professor** | ✅ Demo original | ✅ Show versioning |
+| **For Classmates** | ❌ Can't use | ✅ Can use |
+| **Production Ready** | ✅ Yes | ✅ Yes |
+
+---
+
+## 🎯 Use Cases
+
+### **Generic Version (`feature/generic-version`)**
+
+**For Students:**
+- 📚 Upload assignment datasets
+- 🧪 Experiment with different queries
+- 📊 Generate visualizations for reports
+- 🔍 Validate calculations
+
+**For Businesses:**
+- 📈 Sales analysis
+- 📦 Inventory management
+- 💰 Profitability tracking
+- 🎯 Marketing effectiveness
+
+**For Researchers:**
+- 📊 Data exploration
+- 📈 Trend identification
+- 🔬 Hypothesis testing
+- 📉 Anomaly detection
+
+### **FreshCo Version (`main`)**
+
+**For Demo:**
+- 🏢 Show domain-specific optimization
+- 📊 Present to stakeholders
+- 🎯 Production deployment
+- 📈 Real business use case
 
 ---
 
 ## 🏗️ Technical Architecture
 
+### **Generic Version Innovation**
+
+The key innovation is the **Generic Wrapper System** that makes FreshCo's specialized logic work with any data:
+
+```javascript
+// Before (FreshCo - Hardcoded):
+const product = row.Product_Name;        // ❌
+const revenue = row.Sales_Value;         // ❌
+
+// After (Generic - Dynamic):
+const product = row[colMap.Product_Name]; // ✅
+const revenue = row[colMap.Sales_Value];  // ✅
+```
+
+**How it works:**
+1. User uploads Excel/CSV
+2. System detects all columns
+3. Fuzzy matching maps to FreshCo equivalents
+4. All 12 analysis functions work unchanged
+5. Results displayed with charts & validation
+
 ### **Technology Stack**
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **Charting**: Chart.js with DataLabels plugin
 - **Excel Parsing**: SheetJS (xlsx.js)
 - **AI Model**: Gemini 3 27B (gemma-3-27b-it)
 - **API**: Google Generative AI API
-
-### **How It Works**
-```
-User uploads Excel/CSV
-        ↓
-Auto-detect columns
-        ↓
-Smart column mapping
-        ↓
-User asks question
-        ↓
-Gemini interprets query
-        ↓
-JavaScript calculates results
-        ↓
-Display charts + tables + validation
-```
-
-### **Key Innovation: Generic Wrapper System**
-```javascript
-// Instead of hardcoded:
-const product = row.Product_Name;  // ❌
-
-// Dynamic mapping:
-const product = row[colMap.Product_Name];  // ✅
-```
-
-This allows the same analysis code to work with any data structure!
 
 ---
 
@@ -181,24 +223,32 @@ This allows the same analysis code to work with any data structure!
 ### **Institution**: IIM Ahmedabad
 ### **Semester**: Winter 2026
 
-### **Project Goals**
-1. ✅ Demonstrate AI integration in business analytics
-2. ✅ Build production-ready solution
-3. ✅ Show version control proficiency
-4. ✅ Create reusable, generic tool
+### **Project Evolution**
+```
+Version 1 (main branch)
+    ↓
+Domain-specific FreshCo implementation
+    ↓
+Version 2 (feature/generic-version branch)
+    ↓
+Generic version with dynamic mapping
+    ↓
+Demonstrates version control & code reusability
+```
 
 ### **Learning Outcomes**
-- AI API integration
-- Natural language processing
-- Dynamic data handling
-- Professional UI/UX design
-- Code reusability patterns
+- ✅ AI API integration
+- ✅ Natural language processing
+- ✅ Dynamic data handling
+- ✅ **Version control with Git branches**
+- ✅ **Code generalization & reusability**
+- ✅ Professional UI/UX design
 
 ---
 
 ## 🔧 Configuration
 
-### **Supported File Types**
+### **Supported File Types** (Generic Version)
 - Excel: `.xlsx`, `.xls`
 - CSV: `.csv`
 - **Requirements**: First row must contain column headers
@@ -209,139 +259,146 @@ This allows the same analysis code to work with any data structure!
 - At least 1 numeric column for analysis
 
 ### **Recommended Data Structure**
+```csv
+Transaction_ID,Date,Product,Category,Sales,Units
+1,2024-01-01,Product1,Food,1000,10
+2,2024-01-02,Product2,Beverages,1500,15
 ```
-Transaction_ID | Date       | Product  | Category | Sales | Units
-1              | 2024-01-01 | Product1 | Food     | 1000  | 10
-2              | 2024-01-02 | Product2 | Beverages| 1500  | 15
-```
+
+**Column Mapping Examples:**
+- `Product` / `Product_Name` / `Item` → Auto-detected as product
+- `Sales` / `Sales_Value` / `Revenue` → Auto-detected as revenue
+- `Category` / `Type` / `Segment` → Auto-detected as category
+- Works with ANY column names!
 
 ---
 
 ## 🐛 Troubleshooting
 
 ### **Issue: "Please set your API key"**
-**Solution**: Click ⚙️ API Settings, add key, click Save
+**Solution**: 
+- Click ⚙️ API Settings
+- Paste your Gemini API key (starts with `AIza`)
+- Click Save
 
 ### **Issue: "No data found"**
-**Solution**: Ensure Excel file has headers in first row
+**Solution**: 
+- Ensure Excel file has headers in first row
+- Check file is not empty
+- Try saving as CSV and uploading
 
 ### **Issue: "Total Rows: 0"**
-**Solution**: Query filters are too specific. Try simpler queries first.
+**Solution**: 
+- Query filters are too specific
+- Try: "Show me a summary" first
+- Check console (F12) for column mapping
 
 ### **Issue: Charts not showing**
 **Solution**: 
-1. Check console (F12) for errors
+1. Press F12 → Console for errors
 2. Ensure you have numeric columns
-3. Try query: "Show me a summary"
+3. Verify data loaded: Check "✅ Data Loaded" message
 
 ### **Issue: "API Error 404"**
 **Solution**: 
-1. Check API key is correct (starts with `AIza`)
-2. Verify key has access to gemma-3-27b-it model
-3. Try changing model to `gemini-1.5-flash` in code
+1. Verify API key is correct
+2. Check key has gemma-3-27b-it access
+3. Alternative: Edit HTML, change model to `gemini-1.5-flash`
 
 ---
 
 ## 📊 Performance
 
-| Metric | Value |
-|--------|-------|
-| File Size | 194 KB |
-| Lines of Code | 3,791 |
-| Supported Columns | Unlimited |
-| Max Data Rows | 100,000+ |
-| Query Response Time | 2-5 seconds |
-| API Cost per Query | ~$0.001 |
+| Metric | Generic Version | FreshCo Version |
+|--------|----------------|-----------------|
+| File Size | 194 KB | 183 KB |
+| Lines of Code | 3,791 | 3,648 |
+| Supported Columns | Unlimited | 30 fixed |
+| Max Data Rows | 100,000+ | 206,000 tested |
+| Query Response Time | 2-5 seconds | 2-5 seconds |
+| API Cost per Query | ~$0.001 | ~$0.001 |
+| Setup Time | 2 minutes | Instant |
+| Flexibility | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
 
 ---
 
 ## 🔐 Security & Privacy
 
+### **Generic Version (feature/generic-version)**
 - ✅ **Local Storage**: API key stored in browser only
 - ✅ **No Server**: All processing client-side
 - ✅ **No Uploads**: Data never leaves your computer
 - ✅ **Open Source**: Full code transparency
-- ⚠️ **API Calls**: Data sent to Gemini API for query interpretation only
+- ⚠️ **API Calls**: Only query interpretation sent to Gemini
+
+### **FreshCo Version (main)**
+- ✅ **Google Sheets**: Read-only access
+- ✅ **Embedded Key**: Pre-configured for demo
+- ⚠️ **Not for Production**: API key visible in code
 
 ---
 
 ## 🌐 Browser Compatibility
 
-| Browser | Supported | Tested |
-|---------|-----------|--------|
-| Chrome | ✅ | v120+ |
-| Firefox | ✅ | v120+ |
-| Edge | ✅ | v120+ |
-| Safari | ✅ | v17+ |
-| Opera | ✅ | v105+ |
+| Browser | Generic Version | FreshCo Version |
+|---------|----------------|-----------------|
+| Chrome | ✅ v120+ | ✅ v120+ |
+| Firefox | ✅ v120+ | ✅ v120+ |
+| Edge | ✅ v120+ | ✅ v120+ |
+| Safari | ✅ v17+ | ✅ v17+ |
+| Opera | ✅ v105+ | ✅ v105+ |
 
 ---
 
-## 📈 Roadmap
+## 📈 Version Control Strategy
 
-### **Version 2.0 (Planned)**
-- [ ] Multi-sheet Excel support
-- [ ] Export results to Excel
-- [ ] Save/load query templates
-- [ ] Custom color themes
-- [ ] Multiple file comparison
-- [ ] SQL query generation
+This repository demonstrates professional version control:
 
-### **Version 3.0 (Future)**
-- [ ] Real-time collaboration
-- [ ] Cloud storage integration
-- [ ] Advanced ML predictions
-- [ ] Custom visualization builder
-- [ ] API for developers
+```
+main (FreshCo Version)
+    │
+    ├── freshco_chatbot_final.html
+    ├── README.md
+    └── LICENSE
+    
+feature/generic-version (Generic Version) ⭐
+    │
+    ├── generic_ULTIMATE_COMPLETE.html
+    ├── README.md (this file)
+    └── DOCUMENTATION/
+```
+
+**Why This Structure?**
+- ✅ Preserves original FreshCo version
+- ✅ Shows evolution of project
+- ✅ Demonstrates Git branching
+- ✅ Allows parallel development
+- ✅ Easy to compare versions
+- ✅ Professional workflow
 
 ---
 
 ## 🤝 Contributing
 
-This is an academic project, but contributions are welcome!
+### **Current Branches**
+- `main` - Stable FreshCo version
+- `feature/generic-version` - Active development
 
 ### **How to Contribute**
 1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-### **Contribution Guidelines**
-- Follow existing code style
-- Test with multiple datasets
-- Update documentation
-- Add example queries
+2. Create feature branch from `feature/generic-version`
+   ```bash
+   git checkout -b feature/YourFeature feature/generic-version
+   ```
+3. Make changes
+4. Test with multiple datasets
+5. Submit pull request to `feature/generic-version`
 
 ---
 
 ## 📝 License
 
-This project is licensed under the MIT License - see below for details:
-
-```
-MIT License
-
-Copyright (c) 2026 [Your Name]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+MIT License - See [LICENSE](./LICENSE) file for details
 
 ---
 
@@ -351,7 +408,7 @@ SOFTWARE.
 - 🎓 IIM Ahmedabad
 - 📧 [Your Email]
 - 🔗 [LinkedIn Profile]
-- 💼 [Portfolio]
+- 💼 [GitHub Profile]
 
 ---
 
@@ -370,76 +427,66 @@ SOFTWARE.
 ### **For Issues**
 - 🐛 [Report Bug](https://github.com/YOUR_USERNAME/generic-bi-chatbot/issues)
 - 💡 [Request Feature](https://github.com/YOUR_USERNAME/generic-bi-chatbot/issues)
-- 📧 Email: [Your Email]
 
 ### **For Questions**
 - 💬 [GitHub Discussions](https://github.com/YOUR_USERNAME/generic-bi-chatbot/discussions)
-- 📚 [Documentation](./docs/)
+- 📧 Email: [Your Email]
+
+---
+
+## 🔗 Quick Access
+
+### **Main Branch (FreshCo Version)**
+- [View Code](https://github.com/YOUR_USERNAME/generic-bi-chatbot/tree/main)
+- [Download](https://github.com/YOUR_USERNAME/generic-bi-chatbot/archive/refs/heads/main.zip)
+- **Use Case**: Demo, showcase, production deployment
+
+### **Generic Branch (Recommended)** ⭐
+- [View Code](https://github.com/YOUR_USERNAME/generic-bi-chatbot/tree/feature/generic-version)
+- [Download](https://github.com/YOUR_USERNAME/generic-bi-chatbot/archive/refs/heads/feature/generic-version.zip)
+- **Use Case**: Personal use, sharing, assignments
 
 ---
 
 ## 📊 Project Stats
 
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/generic-bi-chatbot?style=social)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/generic-bi-chatbot?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/YOUR_USERNAME/generic-bi-chatbot?style=social)
+![GitHub branches](https://img.shields.io/badge/branches-2-blue)
+![Main branch](https://img.shields.io/badge/main-FreshCo-orange)
+![Feature branch](https://img.shields.io/badge/feature-Generic-green)
 
 ---
 
-## 🎯 Project Highlights
+## 🎯 Which Version Should I Use?
 
-### **Technical Excellence**
-- 🏗️ Modular architecture
-- 🔄 Dynamic column mapping
-- 🎨 Professional UI/UX
-- 📊 Comprehensive analytics
-- ✅ Full validation
+### **Use Main Branch (FreshCo) if:**
+- ✅ You want to see the original implementation
+- ✅ You have FreshCo dataset
+- ✅ You're demonstrating to stakeholders
+- ✅ You want ready-to-run demo
 
-### **Academic Rigor**
-- 📚 Well-documented code
-- 🧪 Extensively tested
-- 📖 Complete README
-- 🎓 Learning-focused
-- 💡 Best practices
-
-### **Business Value**
-- 💰 Zero infrastructure cost
-- ⚡ Instant insights
-- 🔒 Data privacy
-- 📈 Scalable solution
-- 🌍 Universally applicable
-
----
-
-## 🚀 Getting Started Video Tutorial
-
-[Coming soon - YouTube tutorial link]
-
----
-
-## 📸 Screenshots
-
-### Main Interface
-![Main Interface](./screenshots/main-interface.png)
-
-### Data Upload
-![Upload](./screenshots/upload.png)
-
-### Analysis Results
-![Results](./screenshots/results.png)
-
-### Chart Visualization
-![Charts](./screenshots/charts.png)
+### **Use Generic Branch if:** ⭐ **Recommended**
+- ✅ You have your own data
+- ✅ You want to share with classmates
+- ✅ You need flexibility
+- ✅ You want BYOK (privacy)
+- ✅ You're doing assignments
+- ✅ You want to customize
 
 ---
 
 ## 💬 Feedback
 
-We'd love to hear from you! If you use this tool, please:
-- ⭐ Star this repository
-- 📝 Share your experience
-- 🐛 Report any issues
-- 💡 Suggest improvements
+**For Professor:**
+- 📊 Demonstrates version control skills
+- 🔄 Shows code generalization ability
+- 🎯 Highlights software engineering best practices
+- ⭐ Both versions production-ready
+
+**For Classmates:**
+- 🚀 Use the generic version with your data
+- 📚 Great for course assignments
+- 🔐 Your API key = Your credits
+- 💡 Learn from the code structure
 
 ---
 
@@ -449,6 +496,22 @@ We'd love to hear from you! If you use this tool, please:
 
 ---
 
+## 🎓 For Evaluation
+
+**Professor, please note:**
+
+This repository demonstrates:
+1. ✅ **Original Implementation** (main branch) - FreshCo specific
+2. ✅ **Generic Implementation** (feature/generic-version) - Universal
+3. ✅ **Version Control** - Proper branching strategy
+4. ✅ **Code Reusability** - Same logic, different data sources
+5. ✅ **Documentation** - Complete README on both branches
+6. ✅ **Production Quality** - Both versions fully functional
+
+**Navigate between branches to see the evolution!**
+
 ---
 
 **⭐ If this project helped you, please consider giving it a star! ⭐**
+
+**🌿 Currently viewing: `feature/generic-version` branch** (Recommended for general use)
